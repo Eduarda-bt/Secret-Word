@@ -1,0 +1,114 @@
+.game h1 {
+  font-size: 2.5em;
+}
+
+/* Pontuação */
+.points span {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Dica */
+.tip span {
+  color: #80deea;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Container da palavra */
+.wordContainer {
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border: 8px solid #80deea;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: #673ab7;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.wordContainer:hover {
+  transform: scale(1.02);
+}
+
+/* Letras e quadrados em branco */
+.letter, .blankSquare {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  border: 3px solid #4dd0e1;
+  height: 110px;
+  width: 110px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #673ab7;
+  font-weight: bold;
+  margin: 0 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.letter:hover {
+  background-color: #e1f5fe;
+  color: #01579b;
+}
+
+/* Container da letra e input */
+.letterContainer {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 1rem;
+  border: 2px solid #80deea;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.letterContainer input:focus {
+  border-color: #4dd0e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botão */
+.letterContainer button {
+  background-color: #80deea;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #673ab7;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.letterContainer button:hover {
+  background-color: #4dd0e1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
